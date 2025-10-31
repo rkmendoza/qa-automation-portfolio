@@ -36,7 +36,6 @@ When('creo un nuevo post con título {string} y cuerpo {string} para el usuario 
 });
 
 Then('la respuesta debería tener status {int}', function (expectedStatus) {
-      console.log("response EN EL THENNNNNNNNNNNNNN ", response);
   expect(response.status).to.equal(expectedStatus);
 });
 

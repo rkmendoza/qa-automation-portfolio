@@ -14,7 +14,10 @@
     "test:bdd:debug": "cucumber-js --import features/step_definitions/**/*.js --format progress-bar --format message:reports/cucumber/debug.ndjson",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "ci-test": "npm run test:bdd",
+    "report": "node generate-reports.js",
+    "coverage": "nyc npm run test:bdd:simple"
   },
   "keywords": [],
   "author": "",
