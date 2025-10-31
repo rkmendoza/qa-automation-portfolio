@@ -1,0 +1,32 @@
+{
+  "name": "qa-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha tests/**/*.js --bail=false --timeout=10000 --reporter=spec --recursive",
+    "test:fast": "mocha tests/**/*.js --bail=true",
+    "test:api": "mocha tests/api/**/*.js",
+    "test:bdd": "cucumber-js --import features/step_definitions/**/*.js --import features/support/**/*.js --format progress-bar --format json:reports/cucumber/cucumber-report.json --format html:reports/cucumber/cucumber-report.html",
+    "test:bdd:reports": "npm run test:bdd && node generate-reports.js",
+    "test:bdd:simple": "cucumber-js --import features/step_definitions/**/*.js --format progress-bar",
+    "test:bdd:debug": "cucumber-js --import features/step_definitions/**/*.js --format progress-bar --format message:reports/cucumber/debug.ndjson",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@cucumber/pretty-formatter": "^2.3.0",
+    "chai": "^5.0.0",
+    "cucumber-html-reporter": "^7.2.0",
+    "eslint": "^9.37.0",
+    "mocha": "^10.0.0",
+    "prettier": "^3.6.2",
+    "supertest": "^7.1.4"
+  }
+}
