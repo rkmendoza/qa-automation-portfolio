@@ -54,7 +54,7 @@ jobs:
       with:
         projectBaseDir: javascript-api-automation
         args: >
-          -Dsonar.projectKey=rkmendoza_javascript-api-automation
+          -Dsonar.projectKey=rkmendoza_qa-automation-portfolio
           -Dsonar.organization=rkmendoza
 
     - name: Upload test results
