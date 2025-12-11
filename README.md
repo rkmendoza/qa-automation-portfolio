@@ -148,4 +148,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Connect with me:** [GitHub](https://github.com/rkmendoza) | [LinkedIn](https://linkedin.com/in/rkmendoza) | [Portfolio](https://rkmendoza.dev)
 
-*Last updated: October 2025*
+*Last updated: December 2025*
